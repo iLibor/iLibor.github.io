@@ -1,9 +1,18 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Testovací text</title>
-  </head>
-  <body>
-    <p>Testovací text <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
-</html>
+---
+layout: default
+rbar: 
+   - fb
+   - calendar
+img: banner-default.jpg
+---
+
+{% include homepage/banner.html 
+   link='/komunalni-volby/'
+   title='Komunální volby 2018'
+   default='banner-default.jpg'
+   mobile='banner-mobile.jpg'
+   breakpoint=640
+%}
+
+{% include homepage/news-with-rbar.html %}
+
